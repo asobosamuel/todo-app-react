@@ -13,7 +13,7 @@ function App() {
 
   const createTodo = () => {
     axios
-      .post("http://localhost:3000/todos", {
+      .post("https://todo-app-react-m2a3.onrender.com/todos", {
         text: todo,
         completed: false,
       })

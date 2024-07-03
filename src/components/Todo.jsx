@@ -12,21 +12,25 @@ const Todo = ({ id, text, completed }) => {
     const data = {
       completed: !completed,
     };
-    axios.patch(`http://localhost:3000/todos/${id}`, data).then(() => {
-      dispatch(fetchTodos());
-    });
+    axios
+      .patch(`https://todo-app-react-m2a3.onrender.com/todos/${id}`, data)
+      .then(() => {
+        dispatch(fetchTodos());
+      });
   };
   const deleteTodo = () => {
-    axios.delete(`http://localhost:3000/todos/${id}`).then(() => {
-      dispatch(fetchTodos());
-    });
+    axios
+      .delete(`https://todo-app-react-m2a3.onrender.com/todos/${id}`)
+      .then(() => {
+        dispatch(fetchTodos());
+      });
   };
 
   const editTodo = () => {
     if (!completed) {
       if (todo !== text) {
         axios
-          .patch(`http://localhost:3000/todos/${id}`, {
+          .patch(`https://todo-app-react-m2a3.onrender.com/todos/${id}`, {
             text: todo,
           })
           .then(() => {

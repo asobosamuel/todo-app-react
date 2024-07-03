@@ -9,7 +9,7 @@ const initialState = {
 
 const fetchTodos = createAsyncThunk("todo/fetchTodos", () => {
   return axios
-    .get("http://localhost:3000/todos")
+    .get("https://todo-app-react-m2a3.onrender.com/todos")
     .then((response) => response.data);
 });
 
