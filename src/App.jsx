@@ -32,7 +32,7 @@ function App() {
         <h2 className=" tracking-wider">
           GOAL<span className=" text-orange-600">GETTER</span>
         </h2>
-        <IoLogOut className=" text-3xl" />
+        <IoLogOut className=" text-3xl shrink-0" />
       </header>
       <main className=" container mx-auto p-7">
         <div className="max-w-[500px] mx-auto">
