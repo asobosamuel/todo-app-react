@@ -12,14 +12,14 @@ const Todo = ({ id, text, completed }) => {
     const data = {
       completed: !completed,
     };
-    axios
-      .patch(`http://localhost:3000/todos/${id}`, data)
-      .then(dispatch(fetchTodos()));
+    axios.patch(`http://localhost:3000/todos/${id}`, data).then(() => {
+      dispatch(fetchTodos());
+    });
   };
   const deleteTodo = () => {
-    axios
-      .delete(`http://localhost:3000/todos/${id}`)
-      .then(dispatch(fetchTodos()));
+    axios.delete(`http://localhost:3000/todos/${id}`).then(() => {
+      dispatch(fetchTodos());
+    });
   };
 
   const editTodo = () => {
@@ -29,7 +29,9 @@ const Todo = ({ id, text, completed }) => {
           .patch(`http://localhost:3000/todos/${id}`, {
             text: todo,
           })
-          .then(dispatch(fetchTodos()));
+          .then(() => {
+            dispatch(fetchTodos());
+          });
       }
     }
   };

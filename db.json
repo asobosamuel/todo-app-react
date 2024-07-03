@@ -1,11 +1,6 @@
 {
   "todos": [
     {
-      "id": "2",
-      "text": "Finish homework assignment",
-      "completed": false
-    },
-    {
       "id": "3",
       "text": "Clean the toilet",
       "completed": false
@@ -13,6 +8,11 @@
     {
       "id": "4",
       "text": "Call mom",
+      "completed": false
+    },
+    {
+      "id": "9bb6",
+      "text": "New task",
       "completed": false
     }
   ]
