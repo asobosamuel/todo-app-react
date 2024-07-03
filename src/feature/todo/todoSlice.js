@@ -23,7 +23,7 @@ const todoSlice = createSlice({
     builder.addCase(fetchTodos.fulfilled, (state, action) => {
       state.loading = false;
       state.error = "";
-      state.todos = action.payload;
+      state.todos = action.payload.reverse();
     });
     builder.addCase(fetchTodos.rejected, (state, action) => {
       state.loading = false;

@@ -2,7 +2,7 @@
   "todos": [
     {
       "id": "3",
-      "text": "Clean the toilet",
+      "text": "Clean the apartment",
       "completed": false
     },
     {
@@ -13,6 +13,11 @@
     {
       "id": "9bb6",
       "text": "New task",
+      "completed": false
+    },
+    {
+      "id": "720f",
+      "text": "Old task",
       "completed": false
     }
   ]
