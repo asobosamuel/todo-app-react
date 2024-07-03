@@ -19,6 +19,11 @@
       "id": "29c2",
       "text": "Finish homework assignment",
       "completed": false
+    },
+    {
+      "id": "9977",
+      "text": "new task",
+      "completed": false
     }
   ]
 }
