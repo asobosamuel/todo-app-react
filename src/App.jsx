@@ -54,7 +54,7 @@ function App() {
               onChange={(e) => setTodo(e.target.value)}
             />
             <FaPlusCircle
-              className=" text-orange-600 text-3xl hover:cursor-pointer"
+              className=" text-orange-600 text-3xl hover:cursor-pointer shrink-0"
               onClick={createTodo}
             />
           </form>
